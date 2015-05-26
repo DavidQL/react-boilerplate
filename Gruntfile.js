@@ -26,7 +26,10 @@ module.exports = function(grunt) {
         dest: 'www/index.js'
       },
       options: {
-        transform: ['reactify']
+        transform: ['reactify'],
+        browserifyOptions: {
+          debug: true
+        }
       }
     },
 
